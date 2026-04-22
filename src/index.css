@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #15161A;
+  --color-brand-card: #101115;
+  --color-brand-gold: #D9B46E;
+  --color-brand-gold-hover: #c4a169;
+  
+  /* Font Family is configured automatically if you load the fonts, 
+     but we can set it explicitly if needed. By default Tailwind uses sans. */
+}
+
+/* We still need some very base level styles if not fully covered by Tailwind, but usually Tailwind preflight does it. */
+body {
+  background-color: var(--color-brand-bg);
+  color: theme('colors.white');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
